@@ -1,0 +1,4 @@
+services:
+    App\Infrastructure\Dashboard\EventListener\DashboardViewedListener:
+        tags:
+            - { name: 'kernel.event_listener', event: 'App\Domain\Dashboard\Event\DashboardViewedEvent' }
